@@ -29,5 +29,8 @@
     "react-helmet": "^6.1.0",
     "sass": "^1.38.0",
     "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
   }
 }
