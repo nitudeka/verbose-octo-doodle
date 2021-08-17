@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/Red Hat Display/RedHatDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: "Gelion", -apple-system,
+    /* Firefox supports this but not yet `system-ui` */ "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
