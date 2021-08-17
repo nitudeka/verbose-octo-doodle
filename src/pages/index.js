@@ -1,9 +1,9 @@
-import * as React from "react";
-import "../styles/global.css";
+import React from "react";
+import Layout from "../components/Layout";
 
 // markup
 const IndexPage = () => {
-  return <main></main>;
+  return <Layout></Layout>;
 };
 
 export default IndexPage;
