@@ -1,0 +1,13 @@
+.hero {
+  background-image: linear-gradient(0deg, transparent, rgba(251, 76, 71, 0.1));
+
+  &__heading {
+    &-secondary {
+      width: 50rem;
+    }
+  }
+
+  &__img {
+    width: 80rem;
+  }
+}
