@@ -5,9 +5,9 @@ import "./hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero h-screen relative">
+    <div className="hero h-screen">
       <div className="flex h-full justify-center items-center">
-        <div className="hero__content container mx-auto">
+        <div className="hero__content container mx-auto relative">
           <h1 className="font-heading">
             <span className="text-primary text-4xl">COVID-19 Alert</span>
             <p className="text-secondary mt-5 lg:w-2/4 text-6xl">
@@ -20,14 +20,14 @@ const Hero = () => {
             disease (COVID-19). People may need supportive care to .
           </h2>
           <Button>Let Us Help</Button>
+          <img
+            style={{ zIndex: "-1" }}
+            className="hero__img right-0 lg:-right-56 lg:opacity-100 opacity-10 absolute top-1/2 transform -translate-y-1/2"
+            src={HeroSvg}
+            alt="hero"
+          />
         </div>
       </div>
-      <img
-        style={{ zIndex: "-1" }}
-        className="hero__img lg:opacity-100 opacity-10 absolute right-0 top-1/2 transform -translate-y-1/2"
-        src={HeroSvg}
-        alt="hero"
-      />
     </div>
   );
 };
