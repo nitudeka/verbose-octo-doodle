@@ -19,7 +19,7 @@ const Hero = () => {
             There is no specific medicine to prevent or treat coronavirus
             disease (COVID-19). People may need supportive care to .
           </h2>
-          <Button></Button>
+          <Button>Let Us Help</Button>
         </div>
       </div>
       <img
