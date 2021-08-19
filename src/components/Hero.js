@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="hero__content container mx-auto">
           <h1 className="font-heading">
             <span className="text-primary text-4xl">COVID-19 Alert</span>
-            <p className="text-secondary mt-5 w-2/4 text-6xl">
+            <p className="text-secondary mt-5 lg:w-2/4 text-6xl">
               <span className="block">Stay At Home Quarantine</span>
               <span className="block mt-4">To Stop Corona Virus</span>
             </p>
@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
       <img
         style={{ zIndex: "-1" }}
-        className="hero__img absolute right-0 top-1/2 transform -translate-y-1/2"
+        className="hero__img lg:opacity-100 opacity-10 absolute right-0 top-1/2 transform -translate-y-1/2"
         src={HeroSvg}
         alt="hero"
       />
