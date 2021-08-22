@@ -1,9 +1,14 @@
 import React from "react";
 import "./button.scss";
 
-const Button = ({ children }) => {
+const Button = ({ children, secondary }) => {
   return (
-    <button className="button bg-primary px-16 py-6 text-white font-bold text-3xl tracking-wider">
+    <button
+      className={[
+        secondary ? "bg-opacity-20 text-primary" : "text-white",
+        "button bg-primary px-16 py-6 font-bold text-3xl tracking-wider",
+      ].join(" ")}
+    >
       {children}
     </button>
   );
