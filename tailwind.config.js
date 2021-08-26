@@ -6,6 +6,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      width: {
+        "56rem": "56rem",
+      },
       fontFamily: {
         heading: ["Red Hat Display"],
       },

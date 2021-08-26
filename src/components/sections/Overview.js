@@ -6,7 +6,7 @@ import "./overview.scss";
 
 const Overview = () => {
   return (
-    <div className="relative overflow-x-hidden">
+    <div className="relative w-full">
       <img
         src={SVGPath1470}
         alt="path"
