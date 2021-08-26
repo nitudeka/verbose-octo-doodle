@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/sections/Hero";
 import Overview from "../components/sections/Overview";
 import Contagion from "../components/sections/Contagion";
+import Symptomps from "../components/sections/Symptomps";
 
 // markup
 const IndexPage = () => {
@@ -11,6 +12,7 @@ const IndexPage = () => {
       <Hero />
       <Overview />
       <Contagion />
+      <Symptomps />
     </Layout>
   );
 };
