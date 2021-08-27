@@ -2,7 +2,6 @@ import React from "react";
 import SVGGroup15404 from "../../images/svg/Group15404.svg";
 import SVGPath1470 from "../../images/svg/path1470.svg";
 import Button from "../Button";
-import "./overview.scss";
 
 const Overview = () => {
   return (
