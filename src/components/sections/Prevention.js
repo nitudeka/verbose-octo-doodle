@@ -3,11 +3,13 @@ import SVGMaskGirl1 from "../../images/svg/Mask Girl 1.svg";
 import SVGMaskGirl2 from "../../images/svg/Mask Girl 2.svg";
 import SVGMaskGirl3 from "../../images/svg/Mask Girl 3.svg";
 import SVGMaskGirl4 from "../../images/svg/Mask Girl 4.svg";
+import Path1471 from "../../images/svg/path1471.svg";
+import Path1470 from "../../images/svg/path1470.svg";
 
 const Section = ({ num, alter, title, image, paragraph }) => {
-  const img = <img key={num} className="w-2/4" src={image} />;
+  const img = <img key={num} className="w-2/4 hidden lg:block" src={image} />;
   const content = (
-    <div key={title} className="flex">
+    <div key={title} className="flex lg:mt-0 mt-10">
       <span className="flex font-heading -mt-4 mr-6 text-5xl h-20 w-20 rounded-full justify-center items-center bg-primary text-primary bg-opacity-20">
         0{num}
       </span>
@@ -21,7 +23,8 @@ const Section = ({ num, alter, title, image, paragraph }) => {
   );
 
   return (
-    <div className="flex justify-between container items-center">
+    <div className="flex justify-center lg:flex-row flex-col lg:justify-between container items-center">
+      <img key={num} className="w-2/4 mt-10 block lg:hidden" src={image} />
       {alter ? [content, img] : [img, content]}
     </div>
   );
@@ -56,7 +59,7 @@ const Prevention = () => {
   ];
 
   return (
-    <div className="container mt-16">
+    <div className="container mt-16 relative">
       <div className="lg:px-0 px-16 flex flex-col justify-center items-center">
         <p className="text-primary font-heading text-4xl">Covid-19</p>
         <p className="text-secondary font-heading mt-5 text-5xl">
@@ -67,6 +70,21 @@ const Prevention = () => {
           and some cause disease. A newly identified type has caused
         </p>
       </div>
+      <img
+        src={Path1471}
+        style={{ top: "50rem" }}
+        className="absolute w-80 -left-96 -z-1"
+      />
+      <img
+        src={Path1471}
+        style={{ bottom: "50rem" }}
+        className="absolute w-40 -right-48 -z-1"
+      />
+      <img
+        src={Path1470}
+        style={{ bottom: "20rem" }}
+        className="absolute w-96 -right-96 -z-1"
+      />
       {sections.map((section, i) => (
         <Section
           key={i}
