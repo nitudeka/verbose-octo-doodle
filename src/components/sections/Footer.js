@@ -31,7 +31,7 @@ const Footer = () => {
       <div className="footer__input-container relative mt-10 h-28 overflow-hidden mx-auto">
         <input
           placeholder="snmonydemo@gmail.com"
-          className="h-full text-2xl pl-10 pr-60 absolute w-full bg-white shadow-lg"
+          className="h-full focus:outline-none text-2xl pl-10 pr-60 absolute w-full bg-white shadow-lg"
         />
         <div className="absolute mt-0.5 right-3 top-3">
           <Button>Send</Button>
