@@ -44,16 +44,16 @@ const Footer = () => {
           className="md:my-0 my-10 flex items-center text-2xl"
         >
           <li className="mx-4">
-            <a href="#">Overview</a>
+            <a href="#overview">Overview</a>
           </li>
           <li className="mx-4">
-            <a href="#">Symptoms</a>
+            <a href="#symptomps">Symptoms</a>
           </li>
           <li className="mx-4">
-            <a href="#">Prevention</a>
+            <a href="#prevention">Prevention</a>
           </li>
           <li className="mx-4">
-            <a href="#">Treatment</a>
+            <a href="#map">Treatment</a>
           </li>
         </ul>
         <ul className="flex items-center">
