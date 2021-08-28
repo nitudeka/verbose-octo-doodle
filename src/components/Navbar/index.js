@@ -1,8 +1,26 @@
 import React, { useState } from "react";
 import SVGLogo from "../../images/svg/Logo.svg";
 
+const LinkMobile = ({ onClick, id, title }) => {
+  return (
+    <li
+      onClick={onClick}
+      className="py-4 border-t px-8 cursor-pointer hover:text-primary"
+    >
+      <a href={`#${id}`}>{title}</a>
+    </li>
+  );
+};
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const links = [
+    { id: "overview", title: "Overview" },
+    { id: "symptomps", title: "Symptoms" },
+    { id: "prevention", title: "Prevention" },
+    { id: "map", title: "Treatment" },
+    { id: "contact", title: "Contact" },
+  ];
 
   return (
     <nav className="absolute top-0 left-0 w-full bg-opacity-80 bg-white sm:bg-transparent">
@@ -76,36 +94,16 @@ const Navbar = () => {
       </div>
       {menuOpen && (
         <ul className="block bottom-0 list-none w-full sm:hidden text-4xl">
-          <li
-            onClick={() => setMenuOpen(false)}
-            className="py-4 border-t px-8 cursor-pointer hover:text-primary"
-          >
-            <a href="#overview">Overview</a>
-          </li>
-          <li
-            onClick={() => setMenuOpen(false)}
-            className="py-4 border-t px-8 cursor-pointer hover:text-primary"
-          >
-            <a href="#symptomps">Symptoms</a>
-          </li>
-          <li
-            onClick={() => setMenuOpen(false)}
-            className="py-4 border-t px-8 cursor-pointer hover:text-primary"
-          >
-            <a href="#prevention">Prevention</a>
-          </li>
-          <li
-            onClick={() => setMenuOpen(false)}
-            className="py-4 border-t px-8 cursor-pointer hover:text-primary"
-          >
-            <a href="#map">Treatment</a>
-          </li>
-          <li
-            onClick={() => setMenuOpen(false)}
-            className="py-4 border-t px-8 cursor-pointer hover:text-primary"
-          >
-            <a href="#contact">Contact</a>
-          </li>
+          {links.map((link) => {
+            return (
+              <LinkMobile
+                key={link.id}
+                onClick={() => setMenuOpen(false)}
+                title={link.title}
+                id={link.id}
+              />
+            );
+          })}
         </ul>
       )}
     </nav>
