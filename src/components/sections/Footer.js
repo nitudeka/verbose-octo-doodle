@@ -6,6 +6,7 @@ import LogoYT from "../../images/svg/Youtube.svg";
 import LogoVimeo from "../../images/svg/Vimeo.svg";
 import LogoTwitter from "../../images/svg/Twitter.svg";
 import SVGPath1470 from "../../images/svg/path1470.svg";
+import "./footer.scss";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
       <img
         src={SVGPath1470}
         alt="path"
-        className="absolute w-1/5 -right-96 transform rotate-45 bottom-18 -z-1"
+        className="hidden sm:block absolute w-1/5 -right-96 transform rotate-45 bottom-18 -z-1"
       />
       <h3
         style={{ color: "#0C6C44" }}
@@ -27,14 +28,7 @@ const Footer = () => {
         <span>Have Question in mind?</span>
         <span className="mt-6">Let us help you</span>
       </h3>
-      <div
-        style={{
-          width: "50rem",
-          borderRadius: "6.5rem",
-          boxShadow: "0 0 2rem rgba(0,0,0,0.1)",
-        }}
-        className="relative mt-10 h-28 overflow-hidden mx-auto"
-      >
+      <div className="footer__input-container relative mt-10 h-28 overflow-hidden mx-auto">
         <input
           placeholder="snmonydemo@gmail.com"
           className="h-full text-2xl pl-10 pr-60 absolute w-full bg-white shadow-lg"

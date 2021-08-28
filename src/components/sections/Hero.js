@@ -10,12 +10,12 @@ const Hero = () => {
         <div className="hero__content container mx-auto relative">
           <h1 className="font-heading">
             <span className="text-primary text-4xl">COVID-19 Alert</span>
-            <p className="text-secondary mt-5 lg:w-2/4 text-6xl">
+            <p className="text-secondary mt-5 lg:w-2/4 text-5xl sm:text-6xl">
               <span className="block">Stay At Home Quarantine</span>
               <span className="block mt-4">To Stop Corona Virus</span>
             </p>
           </h1>
-          <h2 className="text-3xl mb-12 mt-10 leading-relaxed  hero__heading-secondary">
+          <h2 className="text-3xl mb-12 mt-10 leading-relaxed hero__heading-secondary">
             There is no specific medicine to prevent or treat coronavirus
             disease (COVID-19). People may need supportive care to .
           </h2>

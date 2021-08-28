@@ -5,16 +5,16 @@ import Button from "../Button";
 
 const Overview = () => {
   return (
-    <div className="relative w-full">
+    <div className="relative container">
       <img
         src={SVGPath1470}
         alt="path"
-        className="absolute w-1/5 -right-36 transform rotate-45 bottom-0"
+        className="absolute w-1/5 hidden sm:block -right-36 transform rotate-45 bottom-0"
       />
       <img
         src={SVGPath1470}
         alt="path"
-        className="absolute right-40 transform rotate-45 -bottom-40"
+        className="absolute hidden sm:block right-40 transform rotate-45 -bottom-40"
       />
       <div className="container">
         <div className="flex items-center justify-center relative">

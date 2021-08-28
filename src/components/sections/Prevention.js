@@ -10,12 +10,12 @@ const Section = ({ num, alter, title, image, paragraph }) => {
   const img = <img key={num} className="w-2/4 hidden lg:block" src={image} />;
   const content = (
     <div key={title} className="flex lg:mt-0 mt-10">
-      <span className="flex font-heading -mt-4 mr-6 text-5xl h-20 w-20 rounded-full justify-center items-center bg-primary text-primary bg-opacity-20">
+      <span className="flex font-heading flex-shrink-0 -mt-4 mr-6 text-5xl h-20 w-20 rounded-full justify-center items-center bg-primary text-primary bg-opacity-20">
         0{num}
       </span>
       <div>
         <p className="text-secondary font-medium text-5xl">{title}</p>
-        <p className="text-2xl w-42rem mb-12 mt-10 leading-relaxed">
+        <p className="text-2xl sm:w-42rem mb-12 mt-10 leading-relaxed">
           {paragraph}
         </p>
       </div>
@@ -65,7 +65,7 @@ const Prevention = () => {
         <p className="text-secondary font-heading mt-5 text-5xl">
           What should we do
         </p>
-        <p className="text-3xl w-56rem text-center mb-12 mt-10 leading-relaxed">
+        <p className="text-3xl sm:w-56rem text-center mb-12 mt-10 leading-relaxed">
           Corona viruses are a type of virus. There are many different kinds,
           and some cause disease. A newly identified type has caused
         </p>
@@ -78,12 +78,12 @@ const Prevention = () => {
       <img
         src={Path1471}
         style={{ bottom: "50rem" }}
-        className="absolute w-40 -right-48 -z-1"
+        className="hidden sm:block absolute w-40 -right-48 -z-1"
       />
       <img
         src={Path1470}
         style={{ bottom: "20rem" }}
-        className="absolute w-96 -right-96 -z-1"
+        className="hidden sm:block absolute w-96 -right-96 -z-1"
       />
       {sections.map((section, i) => (
         <Section

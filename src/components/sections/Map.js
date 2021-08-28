@@ -14,6 +14,7 @@ import FlagGermany from "../../images/svg/FlagGermany.svg";
 import FlagIran from "../../images/svg/FlagIran.svg";
 import SVGPolygon from "../../images/svg/Polygon.svg";
 import SVGPolygonDown from "../../images/svg/Polygon Down.svg";
+import "./map.scss";
 
 const Flag = ({ country, flag, amount, arrow }) => {
   return (
@@ -52,10 +53,7 @@ const Map = () => {
         </div>
         <img src={SVGMap} />
       </div>
-      <div
-        style={{ width: "50rem", boxShadow: "0 0 2rem rgba(0,0,0,0.1)" }}
-        className="bg-white mx-auto lg:ml-8 mt-20 lg:mt-0 pt-14 px-14 mb-14"
-      >
+      <div className="bg-white map__report mx-auto lg:ml-8 mt-20 lg:mt-0 pt-14 px-14 mb-14">
         <div className="flex items-center justify-between">
           <h2 className="text-secondary font-medium text-5xl">Live Reports</h2>
           <div

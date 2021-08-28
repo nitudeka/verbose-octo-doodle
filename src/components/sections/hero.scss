@@ -4,6 +4,10 @@
   &__heading {
     &-secondary {
       width: 50rem;
+
+      @media (max-width: 768px) {
+        width: auto;
+      }
     }
   }
 
