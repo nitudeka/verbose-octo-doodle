@@ -32,7 +32,7 @@ const Flag = ({ country, flag, amount, arrow }) => {
 
 const Map = () => {
   return (
-    <div className="container flex flex-col lg:flex-row mt-20 lg:mt-0">
+    <div id="map" className="container flex flex-col lg:flex-row mt-20 lg:mt-0">
       <div className="relative flex-grow">
         <div
           style={{ boxShadow: "0 0 2rem rgba(0,0,0,0.1)" }}

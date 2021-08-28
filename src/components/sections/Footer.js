@@ -9,7 +9,7 @@ import SVGPath1470 from "../../images/svg/path1470.svg";
 
 const Footer = () => {
   return (
-    <div className="container mt-20 relative">
+    <div id="contact" className="container mt-20 relative">
       <img
         src={SVGPath1470}
         alt="path"

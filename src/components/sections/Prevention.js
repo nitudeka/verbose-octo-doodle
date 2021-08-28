@@ -59,7 +59,7 @@ const Prevention = () => {
   ];
 
   return (
-    <div className="container mt-16 relative">
+    <div id="prevention" className="container mt-16 relative">
       <div className="lg:px-0 px-16 flex flex-col justify-center items-center">
         <p className="text-primary font-heading text-4xl">Covid-19</p>
         <p className="text-secondary font-heading mt-5 text-5xl">

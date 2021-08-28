@@ -5,7 +5,7 @@ import "./hero.scss";
 
 const Hero = () => {
   return (
-    <div className="hero h-screen overflow-hidden">
+    <div id="overview" className="hero h-screen overflow-hidden pt-16">
       <div className="flex h-full justify-center items-center">
         <div className="hero__content container mx-auto relative">
           <h1 className="font-heading">

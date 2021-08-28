@@ -7,11 +7,13 @@ import Symptomps from "../components/sections/Symptomps";
 import Prevention from "../components/sections/Prevention";
 import Map from "../components/sections/Map";
 import Footer from "../components/sections/Footer";
+import Navbar from "../components/Navbar";
 
 // markup
 const IndexPage = () => {
   return (
     <Layout>
+      <Navbar />
       <Hero />
       <Overview />
       <Contagion />

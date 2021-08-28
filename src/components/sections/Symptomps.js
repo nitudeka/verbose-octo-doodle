@@ -5,7 +5,7 @@ import Path1764 from "../../images/svg/path1764.svg";
 
 const Symptomps = () => {
   return (
-    <div className="container">
+    <div id="symptomps" className="container">
       <div className="lg:px-0 px-16 flex flex-col justify-center items-center">
         <p className="text-primary font-heading text-4xl">Covid-19</p>
         <p className="text-secondary font-heading mt-5 text-5xl">Symptomps</p>
