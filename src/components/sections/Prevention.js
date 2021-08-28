@@ -14,7 +14,7 @@ const Section = ({ num, alter, title, image, paragraph }) => {
         0{num}
       </span>
       <div>
-        <p className="text-secondary font-heading text-5xl">{title}</p>
+        <p className="text-secondary font-medium text-5xl">{title}</p>
         <p className="text-2xl w-42rem mb-12 mt-10 leading-relaxed">
           {paragraph}
         </p>

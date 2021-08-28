@@ -15,6 +15,12 @@
 }
 
 @font-face {
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
   font-family: "Red Hat Display";
   src: url("../fonts/Red Hat Display/RedHatDisplay-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -35,6 +41,7 @@ body {
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   color: #4b4f51;
   overflow-x: hidden;
+  text-transform: capitalize;
 }
 
 .container {
